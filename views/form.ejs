@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./form-styles.css">
+        <script src="./form-script.js" defer></script>
+        <title>Submit new message</title>
+    </head>
+
+    <body>
+        <div class="form-container">
+             <form action="/new" method="POST">
+                <h2>Submit New Message</h2>
+
+                <div class="form-inputs">
+                   <div>
+                        <label for="author">Author</label>
+                        <input type="text" name="author" id="author" placeholder="put your name..." required>
+                   </div>
+
+
+                   <div>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Put your message here..." rows="1" required></textarea>
+                    </div>
+
+
+                    <button type="submit">Add</button>
+                
+                </div>
+             </form>
+        </div>
+    </body>
+
+</html>

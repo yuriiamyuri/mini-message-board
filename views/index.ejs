@@ -1,0 +1,38 @@
+<html>
+  <head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Mini-Meassage Board</title>
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="main">
+        
+        <% messages.forEach(msg => { %> 
+            <div class="msg">
+                <div class="user">
+                    <%= msg.author %> 
+                </div>
+                <div class="msg-content">
+                    <%= msg.message %>
+                </div>
+                <div class="date-of-msg">
+                    <%= msg.date %>
+                </div>
+            </div>
+        <% }); %>
+    
+    </div>
+
+    <div class="add-new-msg-btn">
+      <button type="button">Add</button>
+    </div>
+  </body>
+</html>
+
+
+
+

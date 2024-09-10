@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body, html {
+    margin: 0;
+    position: relative;
+}
+
+.main {
+
+    width: 100vw;
+    min-height: 100vh;
+    padding: 5% 10%;
+    background-color: #292828;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+
+    padding-top: 8%;
+}
+
+.msg {
+    width: 100%;
+    
+    height: fit-content;
+    padding: 5px 10px;
+    border-left: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.user {
+    font-family: sans-serif;
+    text-decoration: underline;
+    cursor: pointer;
+    letter-spacing: 0.7px;
+    color: rgba(255, 255, 255, 0.801);
+}
+
+.msg-content {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgba(255, 255, 255, 0.63);
+    line-height: 1.5;
+    margin-left: 15px;
+}
+
+.date-of-msg {
+    color: rgba(255, 255, 255, 0.63);
+    margin-left: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.add-new-msg-btn {
+    position: fixed;
+    width: 150px;
+    height: 40px;
+    right: 5%;
+    top: 3%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-new-msg-btn button {
+    width: 80%;
+    height: 30px;
+    font-size: 15px;
+    cursor: pointer;
+   
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+
+
+@media (max-width: 642px) {
+    .main {
+        padding-top: 20%;
+    }
+}
+
+@media (max-width: 436px) {
+    .main {
+        padding-top: 25%;
+    }
+}
+
+@media (max-width: 336px) {
+    .main {
+        padding-top: 30%;
+    }
+}
